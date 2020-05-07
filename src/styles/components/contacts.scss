@@ -1,0 +1,108 @@
+.contacts {
+  background-color: #595959;
+  padding: rem(40px) 0;
+}
+
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.contacts__info {
+  width: 40%;
+
+  @include tablet {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.contacts__info-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.contacts__info-text {
+  max-width: rem(350px);
+  width: 100%;
+  line-height: 1.29;
+  color: #d3d2d2;
+  margin-top: rem(20px);
+
+  @include tablet {
+    max-width: 100%;
+  }
+}
+
+.contacts__btn {
+  display: inline-block;
+  background-color: $accent;
+  color: #212121;
+  font-size: rem(16px);
+  padding: rem(15px) rem(20px);
+  margin-top: rem(27px);
+
+  &:hover {
+    filter: brightness(110%);
+  }
+
+  &-icon {
+    height: rem(14px);
+    width: rem(16px);
+    fill: #212121;
+    margin-right: rem(10px);
+  }
+}
+
+.contacts__list {
+  margin-top: rem(27px);
+}
+
+.contacts__item {
+  margin-top: rem(15px);
+
+  &:first-child {
+    margin-top: initial;
+  }
+}
+
+.contacts__link {
+  font-size: rem(16px);
+  color: #fff;
+  transition: all .5s;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &-icon {
+    height: rem(14px);
+    width: rem(14px);
+    fill: $accent;
+    margin-right: rem(8px);
+  }
+
+}
+
+.contacts__map {
+  width: 55%;
+
+  @include tablet {
+    width: 100%;
+    margin-top: rem(30px);
+  }
+  
+  &-google {
+    width: 100%;
+    height: 100%;
+
+    @include tablet {
+      height: rem(250px);
+    }
+  }
+}

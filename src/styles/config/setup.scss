@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'roboto', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: $text;
+  
+  &.blocked {
+    overflow: hidden;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include smallphone {
+    font-size: 12px;
+  }
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content,
+section {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: rem(1140px);
+  min-width: rem(320px);
+  margin: 0 auto;
+
+  @include desktop {
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+svg {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background-color: $accent;
+	color: #fff;
+}
+	
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

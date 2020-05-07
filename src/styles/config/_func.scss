@@ -1,0 +1,15 @@
+//function
+
+@function rem($px) {
+  @return $px/16px+0rem;
+}
+
+//redefine fancybox functions
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+  
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

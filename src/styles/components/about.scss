@@ -1,0 +1,32 @@
+.about {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: rem(37px) 0 rem(47px);
+}
+
+.about__content {
+  max-width: rem(550px);
+
+  @include large {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.about__title {
+  font-size: rem(24px);
+  font-weight: 500;
+  color: #fff;
+}
+
+.about__desc {
+  line-height: 1.71;
+  color: #d3d2d2;
+  margin-top: rem(34px);
+}
+
+.about__btn {
+  margin-top: rem(37px);
+}

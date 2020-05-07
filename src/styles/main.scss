@@ -1,0 +1,27 @@
+//libs
+
+@import 'libs/normalize.scss';
+@import "libs/swiper.scss";
+
+//config
+
+@import "config/_mixins.scss";
+@import "config/_variables.scss";
+@import "config/_func.scss";
+@import "config/fonts.scss";
+@import "config/setup.scss";
+
+//common
+
+@import "components/header.scss";
+@import "components/hero.scss";
+@import "components/services.scss";
+@import "components/about.scss";
+@import "components/consultation.scss";
+@import "components/advantages.scss";
+@import "components/news.scss";
+@import "components/contacts.scss";
+@import "components/footer.scss";
+@import "components/modal.scss";
+@import "components/btn.scss";
+@import "components/section_top.scss";

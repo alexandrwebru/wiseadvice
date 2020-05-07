@@ -1,0 +1,144 @@
+.consultation {
+  padding: rem(60px) 0;
+}
+
+.consultation__container {
+  position: relative;
+}
+
+.consultation__content {
+  margin-top: rem(45px);
+}
+
+.consultation__form-inner {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.consultation__form-left {
+  
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: rem(15px);
+}
+
+.form__label {
+  font-weight: 500;
+  color: #282828;
+}
+
+.form__input {
+  width: rem(264px);
+  height: rem(40px);
+  border: 1px solid #e6e6e6;
+  padding: 0 rem(10px);
+  margin-top: rem(7px);
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.form__select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select__label {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: rem(10px);
+    height: rem(10px);
+    position: absolute;
+    right: 16px;
+    bottom: -30px;
+    background-image: url(../images/icon/chevron-down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+
+.form__submit {
+  display: inline-block;
+  color: #282828;
+  font-weight: 500;
+  background-color: transparent;
+  padding: rem(12px) rem(20px);
+  border: 1px solid $accent;
+  border-right-width: rem(20px);
+  position: relative;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: rem(38px);
+
+  @include tablet {
+    align-self: flex-start;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: $accent;
+    transition: all .5s;
+  }
+
+  &-icon {
+    width: rem(6px);
+    height: rem(18px);
+    fill: #fff;
+    position: absolute;
+    right: -12px;
+  }
+
+}
+
+.consultation__form-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: rem(30px);
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+
+  @include tablet {
+    margin-left: initial;
+  }
+
+}
+
+.form__textarea {
+  width: rem(557px);
+  height: rem(195px);
+  resize: none;
+  border: 1px solid #e6e6e6;
+  padding: rem(10px) rem(10px);
+  margin-top: rem(8px);
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.consultation__image {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+
+  @media (max-width: 1120px){
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+.advantages {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: rem(55px) 0 rem(65px);
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: rem(-15px);
+  margin-left: rem(-15px);
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 rem(15px);
+
+  @include tablet {
+    max-width: 80%;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin-bottom: rem(80px);
+  }
+  
+.advantages__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(40px);
+  height: rem(40px);
+  border: 1px solid $accent;
+
+  &-svg {
+    width: rem(12px);
+    fill: #fff;
+  }
+}
+
+  .advantages__title {
+    font-size: rem(18px);
+    text-align: center;
+    color: #fff;
+    margin-top: rem(28px);
+  }
+
+  .advantages__desc {
+    font-family: 'ptserif', Georgia, serif;
+    font-size: rem(14px);
+    line-height: 1.71;
+    letter-spacing: 0.14px;
+    text-align: center;
+    color: #d3d2d2;
+    margin-top: rem(23px);
+  }
+
+}
