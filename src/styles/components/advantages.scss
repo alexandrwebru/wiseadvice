@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: rem(55px) 0 rem(65px);
+  padding: rem(55px) 0 rem(55px);
 }
 
 .advantages__list {
@@ -32,6 +32,10 @@
     flex-shrink: 1;
     flex-basis: auto;
     margin-bottom: rem(80px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   
 .advantages__icon {

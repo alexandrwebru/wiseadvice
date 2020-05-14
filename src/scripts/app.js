@@ -80,6 +80,9 @@ window.addEventListener('DOMContentLoaded', () => {
   const newsSwiper = new Swiper(newsSlider, {
     slidesPerView: 1,
     loop: true,
+    // autoplay: {
+    //   delay: 5000,
+    // },
     disableOnInteraction: false,
     navigation: {
       nextEl: '.news-slider__control--right',
